@@ -1,14 +1,15 @@
-class Cricketer:
-	def __init__(self, name, age, average):
-		self.name = name
-		self.age = age
-		self.average = average
+class Demo:
+	def __init__(self):
+		print('constructor is executed')
 
 	def display(self):
-		print(f'Name: {self.name}')
-		print(f'Age: {self.age}')
-		print(f'Average: {self.average}')
+		print('instance method is executed')
 
 if __name__ == '__main__':
-	c = Cricketer(name = 'sachin', age = 48, average = 50.6)
-	c.display()
+	d1 = Demo()
+	d2 = Demo()
+	d3 = Demo()
+
+	d1.display()
+	d1.display()
+	

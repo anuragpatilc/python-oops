@@ -1,15 +1,18 @@
-# The name of the self may change into any name as user wants  the program works fine no problem
-class Student:
-	def __init__(anurag, name, age, average):
-		anurag.name = name
-		anurag.age = age
-		anurag.average = average
-		print(id(anurag))
+class Employee:
 
-	def display(anurag):
-		print(anurag.name, anurag.age, anurag.average)
+	def __init__(sandesh, name, age, marks):
+		sandesh.name = name
+		sandesh.age = age
+		sandesh.marks = marks
+		print(id(sandesh))
+
+	def display(akash):
+		print(id(akash))
+		print(akash.name)
+		print(akash.age)
+		print(akash.marks)
 
 if __name__ == '__main__':
-	s = Student(name = 'anurag', age = 24, average = 99)
-	print(id(s))
-	s.display()
+	e1 = Employee(name= 'anurag', age = 23, marks = 50)
+	print(id(e1))
+	e1.display()

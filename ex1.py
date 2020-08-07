@@ -1,6 +1,9 @@
-# creating of class in python
-class OnlineBatch:
-	'''This is the anurag on-line class'''
+class Demo:
+	def __init__(self):
+		print('the constructor is executed')
+	def display(self):
+		print('the instance method is executed')
 
-print(OnlineBatch.__doc__)
-help(OnlineBatch)
+if __name__ == '__main__':
+	d = Demo()
+	d.display()
